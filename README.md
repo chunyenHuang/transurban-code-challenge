@@ -15,6 +15,12 @@
 4. Commit the project to the GitHub repository you created in step 1.  Include all source code, unit tests, serverless files.  Do not include any generated files.  For instance, the node_modules/ directory created from a npm install command
 5. Please email back a url to the repository and a url and API key to your API running in AWS.
 
+## GetStarted
+
+```bash
+npm i && npm run deploy
+```
+
 ## Demo
 
 ```bash
@@ -34,12 +40,6 @@ Or you can make api call with the following parameters.
         "data": [10, 20, 20, 10, 10, 30, 50, 10, 20]
     }
 }
-```
-
-## GetStarted
-
-```bash
-npm i && npm run deploy
 ```
 
 ## Test
