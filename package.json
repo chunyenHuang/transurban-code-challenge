@@ -1,0 +1,28 @@
+{
+  "name": "transurban-code-challenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "preinstall": "npm i -g serverless mocha nodemon",
+    "deploy": "npm test && serverless deploy",
+    "test": "mocha *.spec.js --timeout 3000",
+    "test:c": "nodemon --exec \"npm test\"",
+    "demo": "node demo.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chunyenHuang/transurban-code-challenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chunyenHuang/transurban-code-challenge/issues"
+  },
+  "homepage": "https://github.com/chunyenHuang/transurban-code-challenge#readme",
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "chai": "^4.2.0"
+  },
+  "dependencies": {}
+}

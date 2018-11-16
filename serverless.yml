@@ -1,0 +1,19 @@
+service: array-comparison 
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: us-east-1
+  memorySize: 128
+  apiKeys:
+    - transurban-code-challenge
+
+functions:
+  array-comparison-compare:
+    handler: handler.compare
+    events: 
+       - http:
+          method: post
+          path: arrayComparison
+          private: true
+
